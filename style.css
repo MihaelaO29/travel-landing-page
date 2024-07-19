@@ -21,7 +21,7 @@ body {
     width:100%; 
 }
 .nav {
-    height: 130px;
+    height: 100px;
     margin: 20px 130px;
     display: flex;
     align-items: center;
@@ -64,7 +64,7 @@ body {
 .about {
     height: 500px;
     width: 50%;
- 
+    margin-top: 120px;
 }
 
 

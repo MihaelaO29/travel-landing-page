@@ -16,7 +16,10 @@ body {
     font-weight: bold;
 }
 
-
+.travel{
+    height: 100%;
+    width:100%; 
+}
 .nav {
     height: 130px;
     margin: 20px 130px;
@@ -51,15 +54,17 @@ body {
 
 .content {
     margin: 0 200px;
-    height: 500px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .about {
     height: 500px;
     width: 50%;
+ 
 }
 
 

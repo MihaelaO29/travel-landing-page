@@ -9,10 +9,16 @@ const boraBoraTitle = "Bora Bora";
 const baliTitle = "Bali";
 const palawanTitle = "Palawan";
 const allImage = document.querySelectorAll('.image');
+let currentImage = null;
 
 
 allImage.forEach((img, i) => {
     img.addEventListener('click', function () {
+        if (currentImage) {
+            currentImage.classList.remove('enlarged');
+        }
+        currentImage = img;
+        currentImage.classList.add('enlarged');
         const aboutIsland = document.querySelector('.information');
         const title = document.querySelector('.title');
         if (i === 0) {

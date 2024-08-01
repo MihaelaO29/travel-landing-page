@@ -23,7 +23,7 @@ body {
 
 .nav {
     height: 100px;
-    margin: 20px 130px;
+    margin: 30px 130px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,7 +35,7 @@ body {
 
 .menu {
     height: 50px;
-    width: 30%;
+    width: 40%;
     display: flex;  
     align-items: center;
     justify-content: space-between;
@@ -48,8 +48,13 @@ body {
     justify-content: center;
 }
 
-.selector p {
-    font-size: 18px;
+.selector_text{
+text-shadow: 1px 1px rgb(139, 139, 139);
+color: rgb(8, 8, 214);
+}
+
+.selector,.selector_text {
+    font-size: 19px;
     margin: 0;
     transition: transform 0.2s ease-in-out;
 }
@@ -95,17 +100,15 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 20%;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
 }
 
-.swich_destination .destination .img_container:first-child .image {
-    transform: scale(1.1);
-}
-
-.image:hover {
+.image.enlarged {
+    transform: scale(1.2);
     filter: blur(2px);
     -webkit-filter: blur(2px);
-    transform: scale(1.1);
-}
+    transform: scale(1.1); 
+  }
 
 .destination {
     height: 80px;
@@ -175,6 +178,7 @@ h1 {
 .play {
     height: 50px;
     width: 50px;
+    cursor: pointer;
 }
 
 .play:hover {

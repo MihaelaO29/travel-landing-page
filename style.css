@@ -36,24 +36,19 @@ body {
 .menu {
     height: 50px;
     width: 40%;
-    display: flex;  
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.selector {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.selector_text {
+    text-shadow: 2px 2px rgb(60, 60, 60);
+    color: rgb(228, 228, 228);
 }
 
-.selector_text{
-text-shadow: 1px 1px rgb(139, 139, 139);
-color: rgb(8, 8, 214);
-}
-
-.selector,.selector_text {
+.selector,
+.selector_text {
     font-size: 19px;
     margin: 0;
     transition: transform 0.2s ease-in-out;
@@ -65,18 +60,13 @@ color: rgb(8, 8, 214);
 }
 
 .content {
-    margin: 0 200px;
-    height: 400px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 50px;
+    margin: 95px 150px;
 }
 
 .about {
-    height: 500px;
     width: 50%;
-    margin-top: 120px;
 }
 
 .swich_destination {
@@ -106,8 +96,8 @@ color: rgb(8, 8, 214);
 .image.enlarged {
     filter: blur(2px);
     -webkit-filter: blur(2px);
-    transform: scale(1.1); 
-  }
+    transform: scale(1.1);
+}
 
 .destination {
     height: 80px;
@@ -119,11 +109,11 @@ color: rgb(8, 8, 214);
     border-radius: 25px;
 }
 
-h1 {
+.about_heading {
     font-size: 30px;
 }
 
-.title {
+.about_subheading {
     font-size: 70px;
 }
 
@@ -157,7 +147,6 @@ h1 {
 }
 
 .second_button {
-    height: 500px;
     width: 50%;
     display: flex;
     align-items: center;
